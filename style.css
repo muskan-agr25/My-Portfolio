@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+     /* position: absolute; */
+    background-color:rgba(123, 120, 120, 0.429);
+    width: 300px;
+    height: 100vh;
+    font-family: "Work Sans", sans-serif;
+    transition: transform 0.7s ease-in;
+}
+.sidebargo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.topname{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Work Sans", sans-serif;
+    color: rgba(128, 0, 128, 0.74);
+
+}
+
+.sidebar nav{
+    padding: 30px 45px;
+    margin-top: 30px;
+  
+}
+.sidebar nav li{
+    list-style: none; /* side ke dots will disappear */
+    font-size: 25px;
+    padding: 20px 0px;
+  
+}
+.sidebar nav li a{
+    text-decoration: none; /*line ht jayegi */
+    color: black;  
+}
+.sidebar nav li a:hover{
+    color: rgb(255, 119, 0);
+     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+
+}
+.main{
+    /* background-color: yellow; */
+    width: 70vw;
+}
+.container{
+    display: flex;
+
+}
+
+.infocontainer{
+    /* background-color: rgba(255, 0, 251, 0.733); */
+    height:100vh;
+    width: 100vw;
+    /* margin:100px 40px; */
+    display: flex;
+    justify-content: space-around;
+    background-color:#C9E4FF;
+}
+.devinfo{
+font-size: 16px;
+    display: flex;
+    /* background-color: blue; */
+   justify-content: center;
+    flex-direction: column;
+     font-family: "Source Code Pro", monospace;
+    margin-left: 1.5em;
+    width: 62vw;
+    
+}
+.hello{
+   font-size: 3em ;
+}
+
+.name{
+    font-size:3em;
+    font-weight: bold;
+    font-family: "Work Sans", sans-serif;
+
+}
+
+/* .about{
+font-size: 2em;
+margin-top: 5px;
+
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  /* border-right: 2px solid black; */
+  /* animation:about 2s steps(30, end) forwards;
+
+} */
+
+/* @keyframes about {
+  from { width: 0; }
+  to { width: 800px; } /* or use 'ch' unit if preferred 
+}  */
+
+.about {
+  font-size: 2em;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  animation: about 4s steps(30, end) 11s infinite alternate, blink 0.7s step-end infinite;
+}
+
+@keyframes about {
+  from { width: 0; }
+  to { width: 600px; } 
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+
+.aboutmore{
+    font-size: 1em;
+    margin-top: 10px;
+}
+.buttons{
+      margin-top: 15px;
+      font-size: 16px;
+}
+.buttons button{
+
+    padding: 10px 14px;
+    margin: 3px 3px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(149, 14, 233, 0.895);
+    border: 1px black solid;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+     
+}
+.buttons button:hover{
+   background-color: white;
+   color: rgba(149, 14, 233, 0.895);
+}
+
+.image-wrapper {
+  position: relative;
+   width: 295px;
+    height: 350px;
+  margin: 120px auto;
+  margin-right: 110px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.ring {
+    position: absolute;
+    top: -3px;
+    left: 1px;
+    width: 98%;
+    height: 107%;
+    border: 15px solid #ffc107;
+    border-radius: 66%;
+    transform: rotate(128deg);
+    z-index: 1;
+    box-shadow: 4px 4px 20px rgba(255, 193, 7, 0.662);
+}
+
+
+
+/* for intro */
+
+.introskillhobby{
+    width: 100vw;
+    height: 100vh;
+    background-color: #eadddd;
+    padding-top: 13px;
+}
+
+p{
+    font-family: "Source Code Pro", monospace;
+}
+.intro{
+    margin: 0px 50px;
+}
+.intro h2{
+    font-family: "Work Sans", sans-serif;
+    padding-left: 13px;
+}
+.intro p{
+    font-family: "Source Code Pro", monospace;
+    margin: 12px;
+}
+.skillcontainer{
+   padding: 12px;
+   margin: 0px 50px ;
+}
+.skillcontainer h2{
+     font-family: "Work Sans", sans-serif;
+     padding-bottom: 13px;
+}
+.skillitem{
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    font-family:  "Source Code Pro", monospace;
+    font-weight: 700;
+}
+.skill{
+    width: 200px;
+    height: 10px;
+    border: 2px solid black;
+}
+.hundred{
+    width: 265px;
+    background-color: aqua;
+}
+.t75{
+    width: 200px;
+    background-color: palevioletred;
+}
+.fifty{
+ width: 125px;
+ background-color: green;
+}
+.t25{
+    width: 75px;
+    background-color: yellow;
+}
+
+.hobby{
+     padding: 12px;
+   margin: 0px 50px ;
+}
+.hobby h2{
+     font-family: "Work Sans", sans-serif;
+     padding-bottom: 13px;
+}
+.hobbyitem{
+    margin: 4px;
+    
+    font-family:  "Source Code Pro", monospace;
+    font-weight: 700;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 6px;
+    left: 5px;
+}
+.ham{
+    margin-left: 10px;
+}
+.cross{
+    margin-left: 250px;
+}
+
+
+/* Education */
+.education{
+    height: 100vh;
+    width: 100vw;
+    background-color:#FFF8DC;
+}
+.educationcont {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  height: 100vh;
+  gap: 12px;
+  padding: 1em 1.5em;
+}
+
+.e{
+  display: flex;  
+  gap: 3px;
+  width: 90vw;
+  height: 13em;
+  margin-left: 32px;
+  /* background-color:#C9E4FF; */
+  /* background-color: #98be97bd; */
+  background-color: #b5ced1b8 ;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+ box-shadow: 4px 4px 12px rgba(202, 143, 71, 0.795);
+}
+.e:hover{
+    transform: scale(1.03); 
+   box-shadow: 4px 4px 12px rgba(202, 143, 71, 0.952);
+
+}
+.degree{
+   
+    display: flex;
+    flex-direction: column;
+    height: 11em;
+    width: 25vw;
+    background-color: #c98862;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
+   box-shadow: 4px 4px 7px rgba(202, 143, 50, 0.795);
+    
+}
+.ebrief{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    height: 11em;
+    width: 64.2vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#a8bfa0;
+    box-shadow: 5px 4px 7px #e7efa5;
+
+}
+
+/* project  */
+
+.project{
+     width: 100vw;
+    height: 100vh;
+    /* background-color:#FFEAEA; */
+    background-color: #FFFFF0;
+}
+.projectcont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;   /* full screen height */
+  gap: 20px;
+  padding:0em 1.5em;
+}
+
+.p{
+  width: 30%;
+  height: 28em;
+  /* background-color:#C9E4FF; */
+  background-color: #F5DEB3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+ box-shadow: 4px 4px 12px rgba(202, 143, 71, 0.795);
+}
+.p:hover{
+    transform: scale(1.03); 
+    box-shadow: 4px 4px 12px rgb(236, 158, 61);
+}
+.pname{
+    font-weight: bold;
+}
+.pdetail{
+     padding: 9px;
+     text-align: justify;
+     width: 22em;
+     height: 7.8em;
+     color: #333333;
+}
+.link{
+     text-align: start;
+    padding: 9px ;
+}
+.link a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+.link a:hover{
+   transform: scale(1.01); 
+   color: rgb(102, 102, 200);
+}
+
+
+
+/* extra for contact */
+
+.contactinformation{
+    font-family: "Work Sans", sans-serif;
+    background-color:#FDE4B9;
+    width: 100vw;
+    height: 100vh;
+   
+}
+.contactinfo{
+     font-family: "Work Sans", sans-serif;
+    padding: 0px 34px;
+    padding-top: 160px;
+}
+.contactinfo h2{
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+    padding: 12px 0px;
+}
+
+.contact{
+   display: flex;
+    justify-content: center;
+   margin-top: 1.5em;;
+}
+
+.mail{
+      font-family: "Source Code Pro", monospace;
+    display: inline-block;
+     margin-left: 28.5em;
+    margin-top: 1.5em;;
+    text-decoration: none;
+   color: black;
+}
+.mail:hover{
+   color: #4a00e0; 
+  transform: scale(1.05); /* Slightly zoom */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Soft, glowing shadow */
+  font-weight: bold
+}
+.logo{
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     margin-right: 4em;
+}
+.logoins{
+   list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 4em;
+    margin-top: 3px;
+}
+ .linewt{
+font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+ .linewt:hover{
+ color:#25D366; /* A nice gradient purple color */
+  transform: scale(1.05); /* Slightly bigger than normal */
+  text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.3); /* Soft, glowing shadow */
+  font-weight: bold
+}
+.whatsapp img{
+    width: 4em;
+    /* margin-top: 4px;
+    margin-right: 4em; */
+}
+.whatsapp img:hover{
+     background-color:#25D366;
+  transform: scale(1.09); /* Slightly bigger than normal */
+  text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.3); /* Soft, glowing shadow */
+}
+.lineli{
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+ .lineli:hover{
+ color: #0A66C2 ;/* A nice gradient purple color */
+  transform: scale(1.05); /* Slightly bigger than normal */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Soft, glowing shadow */
+  font-weight: bold;
+}
+.linkedin img{
+      width: 4em;
+}
+.linkedin img:hover{
+    background-color:  #0A66C2 ;
+  transform: scale(1.09); /* Slightly bigger than normal */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Soft, glowing shadow */
+}
+
+.linein{
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+ .linein:hover{
+ color: #E1306C; /* A nice gradient purple color */
+  transform: scale(1.05); /* Slightly bigger than normal */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Soft, glowing shadow */
+  font-weight: bold;
+}
+.instagram img{
+        width: 5em;
+}
+.instagram img:hover{
+
+background-color: #dd2a7bb4;
+    transform: scale(1.09); /* Slightly bigger than normal */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Soft, glowing shadow */
+
+}
+.copyright{
+   font-family: "Source Code Pro", monospace;
+   margin-left: 29em;
+    margin-top: 1.5em;
+}
+
+
+
+@media (max-width:1000px){
+    /* *{
+        background-color:peachpuff;
+    } */
+   
+    /* .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    } */
+    .devpng{
+        display: none;
+    }
+    .intro {
+        margin:50px 8px;
+    }
+    .contactinfo{
+        margin:10px 8px;
+    }
+    .buttons{
+        font-size: 5px;
+    }
+}
