@@ -557,23 +557,32 @@ font-family: "Source Code Pro", monospace;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .sidebar {
     width: 70%;
   }
- .p {
-    height: auto; 
-    max-width: 90%;
-  }
+
+   .projectcont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+ .p{
+  height: 30vh;
+   width: 90%;
+    
+}
+.p img{
+  display: none;
+}
+ 
 .pdetail {
   height: 7em;
   overflow: hidden;
   text-align: justify;
 }
-
-  .p img {
-    height: 9em;
-  }
   .contact {
     flex-direction: column;
     align-items: center;
@@ -636,4 +645,3 @@ font-family: "Source Code Pro", monospace;
     width: 2.5em;
   }
 }
-
